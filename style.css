@@ -1,7 +1,5 @@
 /* Global css */
-*{
-    
-}
+/* *{ } */
 
 /* Reset some default styles */
 body, h1, h2, h3, p, ul, li {
@@ -55,7 +53,7 @@ body, h1, h2, h3, p, ul, li {
   
 .section {
     padding: 50px ;
-    
+
     text-align: center;
     background-color:
   }
