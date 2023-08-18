@@ -3,57 +3,66 @@
 
 /* Reset some default styles */
 body, h1, h2, h3, p, ul, li {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    
-  }
-  
-  /* Apply some basic styling to the header */
-  .header {
-    display: flex;
-    justify-content: space-evenly; /* even spaces */
-    align-items: center;
-    padding: 10px 20px;
-    background-color: black;
-    color: white;
-  }
-  
-  /* Style for the header buttons */
-  .header-button {
-    margin-top: 5px;
-    padding: 8px 16px;
-    background-color: yellowgreen;
-    border: none;
-    border-radius: 4px;  /* To smooth out egdes of buttons */
-    color: white;
-   
-    text-decoration: none; /* Remove underline from links */
-    cursor: pointer;
-  }
-
-  .video {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Make the container full viewport height */
-    
-    /* Image section is added only for video section, when tried adding it globally it was showing up behind everything on page */
-    background-image: url(./images/bg.jpg);
-    background-size: cover; /* You can change this value */
-    background-position: center;
-  }
-  
-  /* Style for the video player */
-  video {
-    max-width: 50%;
-    max-height: 50%;  /* Ensure the video doesn't exceed its container */
-    border-radius: 10px;  
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
 }
-  
-.section {
-    padding: 50px ;
 
-    text-align: center;
-    background-color:
+/* Apply some basic styling to the header */
+/* Flexbox layout for the header */
+.header {
+  display: flex;
+  justify-content: space-evenly; /* evenly distribute space between elements */
+  align-items: center;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+}
+
+/* Style for the header buttons */
+/* Margin on top to create space between buttons and header */
+.header-button {
+  margin-top: 5px;
+  padding: 8px 16px;
+  background-color: yellowgreen;
+  border: none;
+  border-radius: 4px; /* Rounded corners for buttons */
+  color: white;
+  text-decoration: none; /* Remove underlines from links */
+  cursor: pointer;
+}
+
+/* Change button color on hover for visual feedback */
+.header-button:hover {
+  background-color: green; /* Darker shade on hover */
+}
+
+/* Video section styling */
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Make the container full viewport height */
+
+  /* Background image properties */
+  /* Image section is added only for video section, when tried adding it globally it was showing up behind everything on page */
+  background-image: url(./images/bg.jpg); /* URL to the background image */
+  background-size: cover; /* You can change this value */
+  background-position: center;
+}
+
+/* Style for the video player */
+/* Set maximum dimensions for the video player */
+video {
+  max-width: 50%;
+  max-height: 50%; /* Ensure the video doesn't exceed its container */
+  border-radius: 10px; /* Rounded corners for the video player */
+}
+
+/* Styling for the other sections */
+.section {
+  padding: 50px; /* Padding around the content */
+
+  text-align: center;
+  /* Background color can be added here */
 }
